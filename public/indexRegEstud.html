@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous"> 
+        <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="wrapper"> 
+        <main>
+            <!-- <form id="formEstud">               
+                <input type="text" placeholder="Primer nombre" id="txtNombre">
+                <input type="text" placeholder="Primer apellido" id="txtApellido">
+                <input type="text" placeholder="Dirección" id="txtDireccion">
+                <input type="tel" placeholder="Teléfono" id="txtTelefono">
+                <input type="email" placeholder="Correo electrónico"id="txtEmail">
+                <input type="number" placeholder="Cédula" id="txtCedula" min="0" max="30">
+                <input type="text" placeholder="Carrera" id="txtCarrera">
+                <input type="text" placeholder="Materias aprobadas" id="txtMateriasAprob">
+                <input type="text" placeholder="Primer nombre contacto de Emergencia" id="txtContactEmergNombre">
+                <input type="text" placeholder="Primer Apellido contacto de Emergencia" id="txtContactEmergApellido">
+                <input type="tel" placeholder="Teléfono contacto de Emergencia" id="txtContactEmergTelefono"> -->
+                <!-- <input type="password" placeholder="Contraseña" id="txtContrasenna">
+                <input type="password" placeholder="Confirmación" id="txtConfirmacion"> -->
+                <!-- <button type="button" id="btnRegEstud">Registrar</button> -->
+
+
+                <!-- <label for="txtNombre">Nombre completo</label> -->
+                <!-- <label for="txtTelefono">Teléfono</label> -->
+                <!-- <label for="txtEmail">Correo electrónico</label> -->
+                <!-- <label for="txtEdad">Edad</label> -->
+                <!-- <input type="number" placeholder="Edad" id="txtEdad" min="0" max="120"> -->
+                <!-- <label for="txtContrasenna">Contraseña</label> -->
+                <!-- <label for="txtConfirmacion">Confirmación</label> -->
+            <!-- </form> -->
+
+
+            
+            
+            <form action="">
+            <div class="field">
+              <input type="text" name="txtNombre" id="txtNombre" placeholder="Primer nombre">
+              <label for="txtNombre">Primer nombre</label>
+            </div>
+
+            <div class="field">
+                <input type="text" name="txtApellido" id="txtApellido" placeholder="Primer apellido">
+                <label for="txtApellido">Primer apellido</label>
+              </div>
+
+              <div class="field">
+                <input type="text" name="txtDireccion" id="txtDireccion" placeholder="Dirección">
+                <label for="txtDireccion">Dirección</label>
+              </div>
+
+              <div class="field">
+                <input type="tel" name="txtTelefono" id="txtTelefono" placeholder="+506-8888-8888">
+                <label for="txtTelefono">Teléfono</label>
+              </div>
+            
+            <div class="field">
+              <input type="email" name="txtEmail" id="txtEmail" placeholder="mcorralese@example.com">
+              <label for="txtEmail">Correo electrónico</label>
+            </div>
+
+            <div class="field">
+                <input type="number" name="txtCedula" id="txtCedula" placeholder="Cédula">
+                <label for="txtCedula">Cédula</label>
+              </div>
+
+              <div class="field">
+                <input type="text" name="txtCarrera" id="txtCarrera" placeholder="Carrera">
+                <label for="txtCarrera">Carrera</label>
+              </div>
+
+              <div class="field">
+                <input type="text" name="txtMateriasAprob" id="txtMateriasAprob" placeholder="Materias aprobadas">
+                <label for="txtMateriasAprob">Materias aprobadas</label>
+              </div>
+
+              <div class="field">
+                <input type="text" name="txtContactEmergNombre" id="txtContactEmergNombre" placeholder="Primer nombre contacto de Emergencia">
+                <label for="txtContactEmergNombre">Primer nombre contacto de Emergencia</label>
+              </div>
+
+              <div class="field">
+                <input type="text" name="txtContactEmergApellido" id="txtContactEmergApellido" placeholder="Primer nombre contacto de Emergencia">
+                <label for="txtContactEmergApellido">Primer apellido contacto de Emergencia</label>
+              </div>
+
+              <div class="field">
+                <input type="tel" name="txtContactEmergTelefono" id="txtContactEmergTelefono" placeholder="+506-8888-8888">
+                <label for="txtContactEmergTelefono">Teléfono contacto de Emergencia</label>
+              </div>
+
+               <button type="button" id="btnRegEstud">Registrar</button>
+
+
+
+            </form>
+            
+            
+            
+       
+
+
+            <table id="tblEstud">
+                <thead>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Dirección</th>
+                    <th>Teléfono</th>
+                    <th>Correo electrónico</th>
+                    <th>Cédula</th>
+                    <th>Carrera</th>
+                    <th>Materias</th>
+                    <th>Nombre de emergencia</th>
+                    <th>Apellido de emergencia</th>
+                    <th>Teléfono de emergencia</th>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </main>
+    </div> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.0.5/sweetalert2.all.js"></script>
+    <script src="js/servicioRegEstud.js"></script>
+    <script src="js/controladorRegEstud.js"></script>  
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

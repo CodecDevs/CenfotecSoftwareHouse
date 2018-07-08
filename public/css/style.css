@@ -1,0 +1,320 @@
+html {
+    background-image: url("../img/heroBanner.jpg");
+    background-color: #000;
+  }
+.wrapper {
+  margin: 0 auto;
+  max-width: 1400px;  
+}
+.contactenosHeader a{
+    text-decoration: none;
+    font-size: 1em;
+    color: #aaa;
+    margin-right: 2%;
+    float: right;  
+}
+.contactenosHeader{
+    margin-bottom: 2%; 
+}
+.contactenosHeader a:hover{
+    color:  #fbb803;    
+}
+.menuCont{
+    margin: 2%;
+}
+.menuCont a{    
+    text-decoration: none;
+    color: #fbb803;
+    float: right;
+    margin-bottom: 2%;
+    /* font-size: 1.5em;
+    color: #ffffff; */
+}
+.menuCont a:hover{
+    color: #fff;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease; 
+    text-align: center;
+}
+button {
+    border-style: dashed;
+    border: 4px solid;
+    border-color: #7a7979;
+    padding: 0.7% 5%;
+    border-radius: 50px;
+    background-color: transparent;   
+    color: #fbb803;
+    margin-right: 1%;   
+    cursor: pointer;
+    float: right;
+    margin-bottom: 2%;
+}
+button:hover {
+    border-style: solid;
+    border-color:#fff;
+    color: #fff;
+    -webkit-transition: all 700ms ease;
+    -o-transition: all 700ms ease;
+    transition: all 700ms ease;
+    padding: 0.7% 5%;
+    border-radius: 50px;
+}
+iframe{
+    height:710px; 
+    width:100%;
+    border-style: none;
+    box-shadow: 15px 19px 46px -13px #b8bbb8;
+    /* background: #28921f; */
+    border-radius: 50px;
+}
+/*.registroMed, .registroCasa {
+    position: fixed;
+    left: 2%;
+    top: 2%;
+    width: 67%;  
+}*/
+/*.filtro, .FiltroCasa {
+    border-bottom: 0.5px solid #5f8c05;
+}*/
+/*.datosMed legend{
+    font-size: 1em;
+}*/
+/*.legendLabel{
+    color: #827f7f;
+}*/
+/*#txtFiltro, #txtFiltroCasa {
+    margin-bottom: 3%;
+    width: 100%;
+}*/
+body {   
+    font-family: tahoma;
+    color: #fbb803;
+}
+
+h1{
+    color: #FFF;
+    font-size: 4em;
+    font-weight: 700;
+    line-height: 0.8;
+    padding: 20%;
+    text-align: center;
+    margin: 0;
+}
+h1 span {
+    color: #fbb803;
+    display: block;
+}
+h2 {
+    width: 100%;  
+    font-size: 1.5em;
+    margin-bottom: 5%;    
+}
+
+
+
+
+
+
+
+
+/* inicio: Resgistro estudiante */
+/* form {
+    margin: 2em 0;
+  } */
+  /**
+  * Make the field a flex-container, reverse the order so label is on top.
+  */
+   
+  .field {
+    display: flex;
+    flex-flow: column-reverse;
+    /* margin-bottom: 1em; */
+  }
+  /**
+  * Add a transition to the label and input.
+  * I'm not even sure that touch-action: manipulation works on
+  * inputs, but hey, it's new and cool and could remove the 
+  * pesky delay.
+  */
+  label, input {
+    transition: all 0.2s;
+    touch-action: manipulation;
+  }
+  
+  input {
+    position: relative;
+    left: 25%;
+    top: 60px;
+    width: 50%;
+    margin-bottom: 3%;
+    height: 30px;
+    font-size: 1.1em;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    font-family: inherit;
+    -webkit-appearance: none;
+    border-radius: 0;
+    padding: 0;
+    cursor: text;
+    color: #fbb803;
+  }
+  
+  input:focus {
+    outline: 0;
+    border-bottom: 1px solid #666;
+  }
+  
+  label {
+    position: relative;
+    left: 25%;
+    top: 55px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 0.8em;
+    color: #7a7979;
+  }
+  /**
+  * Translate down and scale the label up to cover the placeholder,
+  * when following an input (with placeholder-shown support).
+  * Also make sure the label is only on one row, at max 2/3rds of the
+  * field—to make sure it scales properly and doesn't wrap.
+  */
+  input:placeholder-shown + label {
+    cursor: text;
+    max-width: 66.66%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transform-origin: left bottom;
+    transform: translate(0, 2.125rem) scale(1.5);
+  }
+  /**
+  * By default, the placeholder should be transparent. Also, it should 
+  * inherit the transition.
+  */
+  ::-webkit-input-placeholder {
+    opacity: 0;
+    transition: inherit;
+  }
+  /**
+  * Show the placeholder when the input is focused.
+  */
+  input:focus::-webkit-input-placeholder {
+    opacity: 1;
+  }
+  /**
+  * When the element is focused, remove the label transform.
+  * Also, do this when the placeholder is _not_ shown, i.e. when 
+  * there's something in the input at all.
+  */
+  input:not(:placeholder-shown) + label,
+  input:focus + label {
+    transform: translate(0, 0) scale(1);
+    cursor: pointer;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+#formEstud input{
+    position: relative;
+    left: 25%;
+    top: 60px;
+    border: none;
+    color: #fbb803;
+    font-size: 1.1em;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    width: 50%;
+    margin-bottom: 3%;
+    height: 30px;
+}
+::placeholder { 
+    color: #999898; 
+    font-size: 1.1em;
+} */
+#btnRegEstud{
+    position: relative;
+    right: 24%;
+    top: 130px;
+}
+#tblEstud {
+    position: absolute;
+    top: 180%;
+    margin-left: 5%;
+}
+#tblEstud thead th {
+    min-width: 10px;
+    text-align: justify;    
+}
+/* fin: Resgistro estudiante */
+
+
+/*#tblEstud a {    
+    margin: 5px;
+    padding: 5px;   
+}*/
+/*#tblEstud a:hover {
+    cursor: pointer;
+  padding: 5%;
+}*/
+/*#tblEstud a.fa-edit {
+    background: #066eb3;
+    color: #fff;
+    text-align: center;
+}
+#tblEstud a.fa-trash {
+    background: #d83504;
+    color: #fff;
+     text-align: center;
+}*/
+tbody{
+    color: #fff;
+    text-align:justify;
+    margin-right: 3%;
+}
+input:focus:invalid,
+textarea:focus:invalid {
+    /* Cuando en el buscador el campo es invalido*/
+    background: #fff url(../img/invalid3.png) no-repeat 98% center;
+    box-shadow: 0 0 5px #ed2024;
+    border-color: #ed2024;
+}
+input:required:valid,
+textarea:required:valid {
+    /* when a field is considered valid by the browser */
+    background: #fff url(../img/valid3.png) no-repeat 98% center;
+    box-shadow: 0 0 5px #5cd053;
+    border-color: #28921f;
+}
+.ocultar {
+    display: none;
+}
+footer{
+    margin-top: 2%;
+}
+.redesSociales a{
+    position: relative; 
+    text-decoration: none;
+    font-size:  1.3em;
+    color:  #827f7f;
+    float:  right; 
+    margin: 0 1% 1% 0;     
+}
+.redesSociales a:hover{
+    color:  #fbb803;        
+}
